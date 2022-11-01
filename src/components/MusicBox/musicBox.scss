@@ -2,7 +2,8 @@
 .radio-container {
   position: absolute;
   top: 80vh;
-  right: -10px;
+  right: 0;
+  z-index: 2;
   animation: floaty3 4s infinite;
   filter: drop-shadow(8px 5px 6px #222);
 }

@@ -8,7 +8,37 @@ import "./main.scss";
 const Main = () => {
   return (
     <div className="main-section">
-      <h1>Christmas time is coming...</h1>
+      <h1>
+        <span className="small-one">Hi, my name is</span>
+        <span className="name">Gokhan Ozturk.</span>
+        <span className="big-one">
+          I build
+          <span className="magic">
+            {/* <div className="fairy">
+              <div className="wings"></div>
+              <div className="glow">
+                <div className="sparkle"></div>
+                <div className="sparkle"></div>
+                <div clclassNameass="sparkle"></div>
+                <div className="sparkle"></div>
+                <div className="sparkle"></div>
+              </div>
+            </div> */}
+            magical
+          </span>
+          things for the web.
+        </span>
+      </h1>
+      <div className="right-side">
+        <h2 className="big-one">
+          <span className="description">
+            I am front end developer specializing in building (and occasionally
+            designing) exceptional digital experience. Currently, I'm focused on
+            building accessible, pixel-perfect and interactive applications.
+          </span>
+        </h2>
+      </div>
+
       <div className="banner-container">
         <img className="elf center" src={elf} alt="" />
         <div className="candy-container candy2">

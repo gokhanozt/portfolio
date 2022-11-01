@@ -103,7 +103,7 @@ const Header = () => {
                 style={{ color: "red" }}
               />
             </div>
-            <span className="logo-text">Gokhan.me</span>
+            {/* <span className="logo-text">Gokhan.me</span> */}
           </a>
         </div>
         <div className="navbar">

@@ -22,9 +22,11 @@
       .navlinks {
         flex-direction: row;
         a {
-          color: $black;
+          color: $white;
+          font-weight: bold;
           &:hover {
-            color: SpringGreen;
+            color: #feff2f;
+            text-decoration: underline;
           }
         }
       }
@@ -52,5 +54,95 @@
       right: 50%;
       top: 20px;
     }
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .App {
+    .main-section {
+      h1 {
+        font-size: 40px;
+        .name {
+          font-size: 50px;
+        }
+        .big-one {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 678px) {
+  .App {
+    .main-section {
+      h1 {
+        font-size: 40px;
+        width: 50%;
+        min-height: auto;
+        .name {
+          font-size: 50px;
+        }
+        .big-one {
+          font-size: 40px;
+        }
+      }
+      .right-side {
+        width: 55%;
+        .big-one {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 679px) and (max-width: 880px) {
+  .App {
+    .main-section {
+      .right-side {
+        width: 70%;
+        .big-one {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .App {
+    .main-section {
+      h1 {
+        width: 80%;
+        .name {
+          font-size: 38px;
+        }
+        .big-one {
+          font-size: 30px;
+          margin-top: 20px;
+        }
+        .small-one {
+          font-size: 20px;
+        }
+      }
+      .right-side {
+        width: 45%;
+        .big-one {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 800px) {
+  html,
+  body {
+    overflow-x: hidden;
   }
 }
