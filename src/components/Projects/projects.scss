@@ -1,0 +1,20 @@
+.projects-section {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(68, 90, 23, 1) 100%
+  );
+
+  height: 100vh;
+}
+
+.another-section {
+  height: 100vh;
+  background: rgb(255, 48, 48);
+  background: radial-gradient(
+    circle,
+    rgba(68, 90, 23, 1) 0%,
+    rgba(255, 86, 48, 1) 100%
+  );
+}

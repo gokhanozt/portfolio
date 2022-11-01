@@ -1,0 +1,40 @@
+@import "../../sassStyles/animations";
+.radio-container {
+  position: absolute;
+  top: 80vh;
+  right: -10px;
+  animation: floaty3 4s infinite;
+  filter: drop-shadow(8px 5px 6px #222);
+}
+.radio {
+  cursor: pointer;
+  width: 250px;
+  height: auto;
+}
+
+.mute {
+  cursor: pointer;
+  width: 27px;
+  height: auto;
+  position: absolute;
+  top: 129px;
+  right: 94px;
+  transform: rotate(4deg);
+  &:hover {
+    width: 29px;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.8));
+  }
+}
+.play {
+  cursor: pointer;
+  width: 27px;
+  height: auto;
+  position: absolute;
+  top: 98px;
+  right: 172px;
+  transform: rotate(2deg);
+  &:hover {
+    width: 29px;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.8));
+  }
+}

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 
 import logo from "../../assets/img/lion.png";
 import eye from "../../assets/img/lion-eye.png";
+import light from "../../assets/img/light.svg";
+
 import "./header.scss";
 
 const Header = () => {
@@ -76,8 +78,18 @@ const Header = () => {
     });
   };
 
+  const menuOnClick = () => {
+    document.getElementById("menu-bar").classList.toggle("change");
+    document.getElementById("nav").classList.toggle("change");
+    document.getElementById("menu-bg").classList.toggle("change-bg");
+    console.log("oo kral");
+  };
+
   return (
     <div className="header">
+      <div className="christmas-light">
+        <img src={light} alt="" className="light" />
+      </div>
       <div className="wrapper">
         <div className="header-logo">
           <a href="/" className="logo">
@@ -95,22 +107,28 @@ const Header = () => {
           </a>
         </div>
         <div className="navbar">
-          <nav className="nav">
+          <nav className="nav-container">
             <div className="container">
               <div id="mainListDiv" className="main_list">
-                <ul className="navlinks">
-                  {NAVS.map((nav) => (
-                    <li>
-                      <a href={nav.link}>{nav.name}</a>
-                    </li>
-                  ))}
-                </ul>
+                <div id="menu">
+                  <div id="menu-bar" onClick={menuOnClick}>
+                    <div id="bar1" className="bar"></div>
+                    <div id="bar2" className="bar"></div>
+                    <div id="bar3" className="bar"></div>
+                  </div>
+                </div>
+
+                <nav className="nav" id="nav">
+                  <ul className="navlinks">
+                    {NAVS.map((nav) => (
+                      <li>
+                        <a href={nav.link}>{nav.name}</a>
+                      </li>
+                    ))}
+                  </ul>
+                </nav>
               </div>
-              <span className="navTrigger">
-                <i></i>
-                <i></i>
-                <i></i>
-              </span>
+              <div className="menu-bg" id="menu-bg"></div>
             </div>
           </nav>
         </div>

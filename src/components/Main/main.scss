@@ -1,0 +1,161 @@
+.main-section {
+  text-align: left;
+  height: calc(100vh - 152px);
+  background: rgb(68, 90, 23);
+  background: linear-gradient(
+    0deg,
+    rgba(68, 90, 23, 1) 0%,
+    rgba(168, 193, 118, 0.7903536414565826) 34%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  width: 100%;
+  h1 {
+    font-family: "Mountains of Christmas", cursive;
+    font-size: 70px;
+    width: 40%;
+    position: absolute;
+    z-index: 10;
+    padding: 10px 40px;
+  }
+}
+
+.banner-container {
+  display: flex;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  //   width: 50%;
+}
+.elf {
+  animation: floaty 6s infinite;
+  filter: drop-shadow(8px 5px 6px #222);
+}
+
+@keyframes floaty {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-120px);
+  }
+}
+
+@keyframes floaty2 {
+  0%,
+  100% {
+    transform: translateY(-100px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+}
+
+@-moz-keyframes move-element {
+  100% {
+    -moz-transform: translate(-160px, -160px);
+  }
+}
+@-webkit-keyframes move-element {
+  100% {
+    -webkit-transform: translate(-160px, -160px);
+  }
+}
+@keyframes move-element {
+  100% {
+    -webkit-transform: translate(-160px, -160px);
+    transform: translate(-160px, -160px);
+  }
+}
+
+@-moz-keyframes move2-element {
+  100% {
+    -moz-transform: translate(160px, 160px);
+  }
+}
+@-webkit-keyframes move2-element {
+  100% {
+    -webkit-transform: translate(160px, 160px);
+  }
+}
+@keyframes move2-element {
+  100% {
+    -webkit-transform: translate(-100px, -100px);
+    transform: translate(100px, 100px);
+  }
+}
+
+@-moz-keyframes rotate-element {
+  100% {
+    -moz-transform: rotate(-720deg);
+  }
+}
+@-webkit-keyframes rotate-element {
+  100% {
+    -webkit-transform: rotate(-720deg);
+  }
+}
+@keyframes rotate-element {
+  100% {
+    -webkit-transform: rotate(-720deg);
+    transform: rotate(-720deg);
+  }
+}
+
+.sock-container {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  z-index: 0;
+  animation: floaty2 9s infinite;
+  animation: move-element 5s infinite linear both alternate;
+  img {
+    display: block;
+    width: 100px;
+    height: auto;
+    animation: rotate-element 20s infinite linear both alternate;
+    filter: drop-shadow(8px 5px 6px #222);
+  }
+}
+
+.toy-container {
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  z-index: 0;
+  animation: move-element 2s infinite linear both alternate;
+  img {
+    display: block;
+    width: 100px;
+    height: auto;
+    animation: rotate-element 40s infinite linear both alternate;
+    filter: drop-shadow(8px 5px 6px #222);
+  }
+}
+
+.candy-container {
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  z-index: 0;
+  animation: move2-element 4s infinite linear both alternate;
+  img {
+    display: block;
+    width: 150px;
+    height: auto;
+    animation: rotate-element 8s infinite linear both alternate;
+    filter: drop-shadow(8px 5px 6px #222);
+  }
+  &.candy2 {
+    top: 20%;
+    left: 20%;
+    z-index: 0;
+    animation: floaty2 9s infinite;
+    filter: drop-shadow(8px 5px 6px #222);
+  }
+}

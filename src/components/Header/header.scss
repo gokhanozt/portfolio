@@ -5,14 +5,16 @@
 
 .header {
   padding: 5px 0;
+  overflow-x: clip;
   .wrapper {
     display: flex;
     align-items: center;
     min-height: 50px;
     position: relative;
-    padding: 0 15px;
+    padding: 0 32px;
     margin: 0 auto;
     max-width: 100%;
+    justify-content: space-between;
   }
   .header-logo {
     flex-shrink: 0;
@@ -74,26 +76,31 @@
     }
   }
 }
+.navbar {
+  z-index: 5;
+}
 .main_list {
   height: 65px;
   float: right;
   ul {
     width: 100%;
-    height: 65px;
+    // height: 65px;
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
+    flex-direction: column;
     li {
       width: auto;
-      height: 65px;
+      height: 50px;
       padding: 0;
       padding-right: 3rem;
+      white-space: nowrap;
       a {
         text-decoration: none;
-        color: $black;
-        line-height: 65px;
-        font-size: 2.4rem;
+        color: $white;
+        line-height: 50px;
+        font-size: 2rem;
         &:hover {
           color: $SpringGreen;
         }
@@ -135,4 +142,131 @@
   //   font-variation-settings: "wght" 100, "ital" 0;
   font-family: "Miltonian", cursive;
   text-shadow: none;
+}
+
+//pffff
+
+#menu {
+}
+
+#menu-bar {
+  width: 45px;
+  height: 40px;
+  margin: 65px 20px 20px 20px;
+  cursor: pointer;
+}
+
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: #dc052d;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+#bar1 {
+  transform: translateY(-4px);
+}
+
+#bar3 {
+  transform: translateY(4px);
+}
+
+.nav {
+  transition: 0.3s ease;
+  display: none;
+}
+
+.nav ul {
+  padding: 0 22px;
+}
+
+.nav li {
+  list-style: none;
+  padding: 12px 0;
+}
+
+.nav li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  font-weight: 400;
+}
+
+.menu-bg,
+#menu {
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
+.menu-bg {
+  z-index: -1;
+  width: 0;
+  height: 0;
+  margin: 30px 0 20px 20px;
+  background: radial-gradient(circle, #dc052d, #dc052d);
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.change {
+  display: block;
+}
+
+.change .bar {
+  background-color: white;
+}
+
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change #bar3 {
+  transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change-bg {
+  width: 520px;
+  height: 460px;
+  transform: translate(45%, -30%);
+}
+.christmas-light {
+  height: 0;
+  z-index: -2;
+}
+.light {
+  width: 101%;
+}
+
+.light {
+  &:nth-child(even) {
+    * {
+      animation: flash 1s linear infinite alternate;
+    }
+  }
+  &:nth-child(odd) {
+    * {
+      animation: flash 1s 1s linear infinite alternate;
+    }
+  }
+}
+
+@keyframes flash {
+  99% {
+    // opacity: 1;
+  }
+  100% {
+    fill: rgba(255, 255, 255, 0.5);
+    // filter: unset;
+    opacity: 0.5;
+  }
 }
