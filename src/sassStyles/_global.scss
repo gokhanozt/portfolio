@@ -15,6 +15,8 @@ body {
   font-family: "Mountains of Christmas", cursive;
   font-size: 62.5%;
   font-size: 10px;
+  background-color: var(--c-bg-body);
+  color: var(--c-text-primary);
 }
 
 .home {
@@ -28,4 +30,89 @@ body {
 .logo {
   //   font-family: "Ruthie", cursive;
   font-family: "Miltonian", cursive;
+}
+
+:root {
+  --c-text-primary: #fff;
+  --c-text-secondary: #b03e49;
+  --c-text-tertiary: #daaf08;
+  --c-border-primary: #323232;
+  --c-bg-primary: #436202;
+  --c-bg-secondary: rgb(73, 201, 73);
+  --c-bg-button: rgb(212, 67, 57);
+  --slider-shadow: inset 0 1px 1px #555;
+  --text-shadow: #980f0f;
+  --gradient1: #fff;
+  --gradient2: rgba(255, 255, 255, 0);
+  --gradient3: rgba(103, 126, 55, 1);
+  --gradient4: rgba(67, 98, 2, 1);
+  --xmas-mode-visible: visible;
+  --dark-mode-visible: hidden;
+  --light-mode-visible: hidden;
+  --xmas-mode-display: block;
+  --dark-mode-display: none;
+  --light-mode-display: none;
+
+  &.dark-theme {
+    --c-text-primary: #eee;
+    --c-text-secondary: #d3d5db;
+    --c-text-tertiary: #daaf08;
+    --c-border-primary: #454545;
+    --c-bg-primary: #323339;
+    --c-bg-secondary: #222128;
+    --c-bg-button: #494a50;
+    --slider-shadow: inset 0 1px 1px #767676;
+    --text-shadow: #980f0f;
+    --gradient1: #323339;
+    --gradient2: #323339;
+    --gradient3: #323339;
+    --gradient4: #323339;
+    --xmas-mode-visible: hidden;
+    --dark-mode-visible: visible;
+    --light-mode-visible: hidden;
+    --xmas-mode-display: none;
+    --dark-mode-display: block;
+    --light-mode-display: none;
+  }
+  &.light-theme {
+    --c-text-primary: #191919;
+    --c-text-secondary: #737374;
+    --c-border-primary: #ccc;
+    --c-text-tertiary: #daaf08;
+    --c-bg-body: #ccc;
+    --c-bg-primary: #fff;
+    --c-bg-secondary: #d4d8dd;
+    --c-bg-button: #fff;
+    --slider-shadow: inset 0 1px 1px #ddd, 0 2px 3px #ccc;
+    --text-shadow: rgba(255, 255, 255, 0.479);
+    --gradient1: #fff;
+    --gradient2: #fff;
+    --gradient3: #fff;
+    --gradient4: #fff;
+    --xmas-mode-visible: hidden;
+    --dark-mode-visible: hidden;
+    --light-mode-visible: visible;
+    --xmas-mode-display: none;
+    --dark-mode-display: none;
+    --light-mode-display: block;
+  }
+
+  &.christmas-theme {
+    --c-text-primary: #fff;
+    --c-text-secondary: #b03e49;
+    --c-text-tertiary: #daaf08;
+    --c-border-primary: #323232;
+    --c-bg-primary: #436202;
+    --c-bg-secondary: rgb(73, 201, 73);
+    --c-bg-button: rgb(212, 67, 57);
+    --slider-shadow: inset 0 1px 1px #555;
+    --text-shadow: #980f0f;
+    --gradient1: #fff;
+    --gradient2: rgba(255, 255, 255, 0);
+    --gradient3: rgba(103, 126, 55, 1);
+    --gradient4: rgba(67, 98, 2, 1);
+    --xmas-mode-visible: visible;
+    --dark-mode-visible: hidden;
+    --light-mode-visible: hidden;
+  }
 }

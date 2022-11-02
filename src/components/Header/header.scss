@@ -6,7 +6,7 @@
 .header {
   padding: 5px 0;
   overflow-x: clip;
-  background-color: #436202;
+  background-color: var(--c-bg-primary);
   .wrapper {
     display: flex;
     align-items: center;
@@ -94,16 +94,16 @@
     li {
       width: auto;
       height: 50px;
-      padding: 0;
-      padding-right: 3rem;
+      padding: 0 2rem;
       white-space: nowrap;
       a {
         text-decoration: none;
         color: $white;
         line-height: 50px;
         font-size: 2rem;
+        font-weight: bold;
         &:hover {
-          color: #445a17;
+          color: #daaf08;
         }
       }
     }
@@ -145,15 +145,12 @@
   text-shadow: none;
 }
 
-//pffff
-
-#menu {
-}
+//TODO fix later
 
 #menu-bar {
   width: 45px;
   height: 40px;
-  margin: 65px 20px 20px 20px;
+  margin: 20px;
   cursor: pointer;
 }
 
@@ -180,7 +177,7 @@
 }
 
 .nav ul {
-  padding: 0 22px;
+  padding: 0 17px;
 }
 
 .nav li {
@@ -200,7 +197,7 @@
 
 .menu-bg,
 #menu {
-  top: 0;
+  top: 50px;
   right: 0;
   position: absolute;
   z-index: 10;
@@ -242,9 +239,47 @@
   transform: translate(45%, -30%);
 }
 .christmas-light {
+  visibility: var(--xmas-mode-visible);
+  display: var(--xmas-mode-display);
   height: 0;
   z-index: -2;
 }
+#hat {
+  position: absolute;
+  width: 30px;
+  height: auto;
+  top: 34px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  visibility: var(--xmas-mode-visible);
+  display: var(--xmas-mode-display);
+}
+
+#beard {
+  position: absolute;
+  width: 30px;
+  height: auto;
+  top: 64px;
+  left: -12px;
+  right: 0;
+  margin: 0 auto;
+  visibility: var(--xmas-mode-visible);
+  display: var(--xmas-mode-display);
+}
+
+#helmet {
+  position: absolute;
+  width: 40px;
+  height: auto;
+  top: 40px;
+  left: -12px;
+  right: 0;
+  margin: 0 auto;
+  visibility: var(--dark-mode-visible);
+  display: var(--dark-mode-display);
+}
+
 .light {
   width: 100%;
 }

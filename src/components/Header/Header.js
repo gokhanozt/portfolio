@@ -3,6 +3,9 @@ import React, { useState, useEffect } from "react";
 import logo from "../../assets/img/lion.png";
 import eye from "../../assets/img/lion-eye.png";
 import light from "../../assets/img/light.svg";
+import hat from "../../assets/img/xmas-hat.png";
+import beard from "../../assets/img/xmas-beard.png";
+import helmet from "../../assets/img/helmet2.png";
 
 import "./header.scss";
 
@@ -26,7 +29,7 @@ const Header = () => {
     },
     {
       name: "Contact",
-      link: "#",
+      link: "#contact",
     },
   ];
 
@@ -48,10 +51,10 @@ const Header = () => {
       const anchorY = rekt.top + rekt.height / 2;
 
       const angleDeg = angle(mouseX, mouseY, anchorX, anchorY);
-      console.log(angleDeg);
+      // console.log(angleDeg);
       const eyes = document.querySelectorAll(".eye");
       eyes.forEach((eye) => {
-        console.log(eye);
+        // console.log(eye);
         eye.style.transform = `rotate(${90 + angleDeg}deg)`;
         anchor.style.filter = `hue-rotate(${angleDeg}deg)`;
       });
@@ -94,6 +97,9 @@ const Header = () => {
         <div className="header-logo">
           <a href="/" className="logo">
             <img id="anchor" src={logo} alt="lion Logo" />
+            <img id="hat" src={hat} alt="hat" />
+            <img id="beard" src={beard} alt="beard" />
+            <img id="helmet" src={helmet} alt="helmet" />
             <div id="eyes">
               <img src={eye} className="eye" alt="lion eye" />
               <img

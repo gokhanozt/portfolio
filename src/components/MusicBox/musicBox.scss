@@ -1,4 +1,5 @@
 @import "../../sassStyles/animations";
+@import "../../sassStyles/global";
 .radio-container {
   position: absolute;
   top: 80vh;
@@ -6,6 +7,8 @@
   z-index: 2;
   animation: floaty3 4s infinite;
   filter: drop-shadow(8px 5px 6px #222);
+  visibility: var(--xmas-mode-visible);
+  display: var(--xmas-mode-display);
 }
 .radio {
   cursor: pointer;
