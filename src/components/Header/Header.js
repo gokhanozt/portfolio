@@ -6,6 +6,7 @@ import light from "../../assets/img/light.svg";
 import hat from "../../assets/img/xmas-hat.png";
 import beard from "../../assets/img/xmas-beard.png";
 import helmet from "../../assets/img/helmet2.png";
+import oldpc from "../../assets/img/oldpc.png";
 
 import "./header.scss";
 
@@ -85,7 +86,6 @@ const Header = () => {
     document.getElementById("menu-bar").classList.toggle("change");
     document.getElementById("nav").classList.toggle("change");
     document.getElementById("menu-bg").classList.toggle("change-bg");
-    console.log("oo kral");
   };
 
   return (
@@ -100,6 +100,7 @@ const Header = () => {
             <img id="hat" src={hat} alt="hat" />
             <img id="beard" src={beard} alt="beard" />
             <img id="helmet" src={helmet} alt="helmet" />
+            <img id="oldpc" src={oldpc} alt="old pc" />
             <div id="eyes">
               <img src={eye} className="eye" alt="lion eye" />
               <img

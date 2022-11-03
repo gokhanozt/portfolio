@@ -441,12 +441,12 @@
   top: 0%;
   right: 20%;
   z-index: 0;
-  animation: move2-element 15s infinite linear both alternate;
+  animation: move2-element 16s infinite linear both alternate;
   visibility: var(--dark-mode-visible);
   display: var(--dark-mode-display);
   img {
     display: block;
-    width: 150px;
+    width: 100px;
     height: auto;
     animation: rotate-element 20s infinite linear both alternate;
     filter: drop-shadow(8px 5px 6px #222);
