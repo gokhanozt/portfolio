@@ -1,17 +1,20 @@
 .projects-section {
-  background: rgb(255, 255, 255);
-  padding: 50px 20px;
+  background: var(--gradient1);
   height: 50vh;
 }
 .section {
+  padding: 50px 40px;
+
   font-size: 20px;
-  font-family: "Germania One", cursive;
+  font-family: var(--font-family-1);
 
   h2 {
     font-size: 40px;
-    border-bottom: 1px solid red;
-    margin: 20px 40px;
+    color: var(--c-text-secondary);
+
+    border-bottom: 1px solid var(--text-shadow);
+    // margin: 20px 40px;
     text-align: left;
-    text-shadow: 2px 2px #980f0f;
+    text-shadow: 2px 2px var(--text-shadow);
   }
 }

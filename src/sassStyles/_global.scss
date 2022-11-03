@@ -12,11 +12,14 @@ body {
   padding: 0;
   box-sizing: border-box;
   // font-family: "Quicksand", sans-serif;
-  font-family: "Mountains of Christmas", cursive;
+  font-family: var(--font-family-2);
   font-size: 62.5%;
   font-size: 10px;
-  background-color: var(--c-bg-body);
+  background-color: var(--c-bg-trianary);
   color: var(--c-text-primary);
+}
+.App {
+  background-color: var(--c-bg-trianary);
 }
 
 .home {
@@ -39,6 +42,7 @@ body {
   --c-border-primary: #323232;
   --c-bg-primary: #436202;
   --c-bg-secondary: rgb(73, 201, 73);
+  --c-bg-trianary: #fff;
   --c-bg-button: rgb(212, 67, 57);
   --slider-shadow: inset 0 1px 1px #555;
   --text-shadow: #980f0f;
@@ -46,12 +50,19 @@ body {
   --gradient2: rgba(255, 255, 255, 0);
   --gradient3: rgba(103, 126, 55, 1);
   --gradient4: rgba(67, 98, 2, 1);
+  --bottom-gradient1: rgb(67, 98, 2);
+  --bottom-gradient2: rgba(67, 98, 2, 1);
+  --bottom-gradient3: rgba(180, 189, 158, 0.6839110644257703);
+  --bottom-gradient4: rgba(255, 255, 255, 0);
   --xmas-mode-visible: visible;
   --dark-mode-visible: hidden;
   --light-mode-visible: hidden;
   --xmas-mode-display: block;
   --dark-mode-display: none;
   --light-mode-display: none;
+  --font-family-1: "Germania One", cursive;
+  --font-family-2: "Mountains of Christmas", cursive;
+  --right-side-width: 45%;
 
   &.dark-theme {
     --c-text-primary: #eee;
@@ -60,6 +71,7 @@ body {
     --c-border-primary: #454545;
     --c-bg-primary: #323339;
     --c-bg-secondary: #222128;
+    --c-bg-trianary: #323339;
     --c-bg-button: #494a50;
     --slider-shadow: inset 0 1px 1px #767676;
     --text-shadow: #980f0f;
@@ -67,12 +79,19 @@ body {
     --gradient2: #323339;
     --gradient3: #323339;
     --gradient4: #323339;
+    --bottom-gradient1: #323339;
+    --bottom-gradient2: #2a2b2e;
+    --bottom-gradient3: rgba(134, 134, 134, 0.684);
+    --bottom-gradient4: rgba(255, 255, 255, 0);
     --xmas-mode-visible: hidden;
     --dark-mode-visible: visible;
     --light-mode-visible: hidden;
     --xmas-mode-display: none;
     --dark-mode-display: block;
     --light-mode-display: none;
+    --font-family-1: "Orbitron", sans-serif;
+    --font-family-2: "Orbitron", sans-serif;
+    --right-side-width: 90%;
   }
   &.light-theme {
     --c-text-primary: #191919;
@@ -82,6 +101,7 @@ body {
     --c-bg-body: #ccc;
     --c-bg-primary: #fff;
     --c-bg-secondary: #d4d8dd;
+    --c-bg-trianary: #fff;
     --c-bg-button: #fff;
     --slider-shadow: inset 0 1px 1px #ddd, 0 2px 3px #ccc;
     --text-shadow: rgba(255, 255, 255, 0.479);
@@ -89,12 +109,19 @@ body {
     --gradient2: #fff;
     --gradient3: #fff;
     --gradient4: #fff;
+    --bottom-gradient1: rgb(255, 255, 255);
+    --bottom-gradient2: rgb(129, 129, 129);
+    --bottom-gradient3: rgba(221, 221, 221, 0.684);
+    --bottom-gradient4: rgba(255, 255, 255, 0);
     --xmas-mode-visible: hidden;
     --dark-mode-visible: hidden;
     --light-mode-visible: visible;
     --xmas-mode-display: none;
     --dark-mode-display: none;
     --light-mode-display: block;
+    --font-family-1: "Open Sans", sans-serif;
+    --font-family-2: "Ubuntu Mono", monospace;
+    --right-side-width: 90%;
   }
 
   &.christmas-theme {
@@ -111,8 +138,15 @@ body {
     --gradient2: rgba(255, 255, 255, 0);
     --gradient3: rgba(103, 126, 55, 1);
     --gradient4: rgba(67, 98, 2, 1);
+    --bottom-gradient1: rgb(67, 98, 2);
+    --bottom-gradient2: rgba(67, 98, 2, 1);
+    --bottom-gradient3: rgba(180, 189, 158, 0.6839110644257703);
+    --bottom-gradient4: rgba(255, 255, 255, 0);
     --xmas-mode-visible: visible;
     --dark-mode-visible: hidden;
     --light-mode-visible: hidden;
+    --font-family-1: "Germania One", cursive;
+    --font-family-2: "Mountains of Christmas", cursive;
+    --right-side-width: 45%;
   }
 }

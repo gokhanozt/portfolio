@@ -141,8 +141,8 @@
 
 .logo:hover {
   //   font-variation-settings: "wght" 100, "ital" 0;
-  font-family: "Miltonian", cursive;
-  text-shadow: none;
+  // font-family: "Miltonian", cursive;
+  // text-shadow: none;
 }
 
 //TODO fix later
@@ -282,28 +282,4 @@
 
 .light {
   width: 100%;
-}
-
-.light {
-  &:nth-child(even) {
-    * {
-      animation: flash 1s linear infinite alternate;
-    }
-  }
-  &:nth-child(odd) {
-    * {
-      animation: flash 1s 1s linear infinite alternate;
-    }
-  }
-}
-
-@keyframes flash {
-  99% {
-    // opacity: 1;
-  }
-  100% {
-    fill: rgba(255, 255, 255, 0.5);
-    // filter: unset;
-    opacity: 0.5;
-  }
 }

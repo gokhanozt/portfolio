@@ -1,3 +1,11 @@
+# You can demo it here:
+
+[https://gokhanme-portfolio.netlify.app/](https://gokhanme-portfolio.netlify.app/)
+
+Screenshots:
+
+![Screenshot](src/assets/img/ss1.png?raw=true "Screenshot1")
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

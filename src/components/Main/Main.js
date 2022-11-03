@@ -6,8 +6,9 @@ import candy from "../../assets/img/candy.png";
 import astro from "../../assets/img/astro2.png";
 import developer from "../../assets/img/developer.png";
 import moon from "../../assets/img/moon1.png";
-import spaceship1 from "../../assets/img/spaceship1.png";
+import spaceship1 from "../../assets/img/spaceship3.png";
 import spaceship2 from "../../assets/img/spaceship2.png";
+import saturn from "../../assets/img/saturn.png";
 import "./main.scss";
 
 const Main = () => {
@@ -45,6 +46,11 @@ const Main = () => {
       </div>
 
       <div className="banner-container">
+        <div className="stars-container">
+          <div id="stars"></div>
+          <div id="stars2"></div>
+          <div id="stars3"></div>
+        </div>
         <img className="main-character elf center" src={elf} alt="" />
         <img className="main-character astro center" src={astro} alt="" />
         <img
@@ -64,15 +70,16 @@ const Main = () => {
         <div className="candy-container">
           <img src={candy} alt="" />
         </div>
+
         <div className="moon-container">
-          <img src={moon} alt="" />
+          <img src={saturn} alt="" />
         </div>
         <div className="spaceship-container spaceship1">
           <img src={spaceship1} alt="" />
         </div>
-        <div className="spaceship-container spaceship2">
+        {/* <div className="spaceship-container spaceship2">
           <img src={spaceship2} alt="" />
-        </div>
+        </div> */}
       </div>
     </div>
   );

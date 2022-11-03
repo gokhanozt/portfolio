@@ -3,6 +3,7 @@
   top: 10px;
   right: 10px;
   width: 300px;
+  z-index: 2;
 }
 
 .theme-switcher {
@@ -55,6 +56,7 @@
       justify-content: center;
       align-items: center;
       font-weight: 500;
+      font-size: 12px;
     }
 
     svg,
@@ -63,12 +65,13 @@
       margin-right: 0.5rem;
       width: 20px;
       height: 20px;
-      color: var(--c-text-primary);
+      color: var(--c-text-primary) !important;
       g {
-        fill: var(--c-text-primary);
+        fill: var(--c-text-primary) !important;
       }
       path {
-        stroke: var(--c-text-primary);
+        stroke: var(--c-text-primary) !important;
+        fill: var(--c-text-primary) !important;
       }
     }
   }

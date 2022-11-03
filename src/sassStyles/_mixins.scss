@@ -92,7 +92,7 @@
         }
       }
       .right-side {
-        width: 55%;
+        width: var(--right-side-width);
         .big-one {
           font-size: 20px;
         }
@@ -121,6 +121,7 @@
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 2;
+        margin-right: 0;
       }
       &.mail {
         grid-column-start: 1;
@@ -185,7 +186,7 @@
         }
       }
       .right-side {
-        width: 45%;
+        width: var(--right-side-width);
         .big-one {
           font-size: 14px;
         }
