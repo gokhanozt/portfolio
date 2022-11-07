@@ -1,0 +1,63 @@
+.experience-section {
+  min-height: 50vh;
+  text-align: left;
+  font-family: var(--font-family-1);
+  position: relative;
+  background: var(--bottom-gradient1);
+  background: linear-gradient(
+    0deg,
+    var(--bottom-gradient2) 0%,
+    var(--bottom-gradient3) 86%,
+    var(--bottom-gradient4) 100%
+  );
+  color: var(--c-text-secondary);
+  h2 {
+    font-size: 44px;
+    text-shadow: 2px 2px var(--text-shadow);
+  }
+
+  h3 {
+    font-size: 40px;
+    text-shadow: 2px 2px var(--text-shadow);
+    color: var(--c-text-tertiary);
+    margin: 20px 0;
+  }
+  .horizontal-container {
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+  }
+  .desc {
+    font-size: 14px;
+    color: var(--text-color-comb-1);
+  }
+  .events-wrapper + ul {
+    display: none !important;
+  }
+  ul.buttons {
+    display: none;
+  }
+}
+.timeline-mobile {
+  display: none !important;
+}
+
+.timeline-mobile {
+  div[style*="background-color: rgb(255, 255, 255);"] {
+    border-radius: 6px;
+    color: var(--text-color-comb-1);
+    font-size: 14px;
+  }
+}
+.company {
+  font-size: 14px;
+}
+.title,
+.company {
+  color: var(--text-color-comb-2);
+}
+.tech {
+  color: var(--c-text-tertiary);
+  font-size: 12px;
+}
+//    background-color: rgb(255, 255, 255);

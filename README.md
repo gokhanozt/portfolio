@@ -4,7 +4,7 @@
 
 Screenshots:
 
-![Screenshot](src/assets/img/ss1.png?raw=true "Screenshot1")
+![Screenshot](src/assets/others/ss1.png?raw=true "Screenshot1")
 
 # Getting Started with Create React App
 

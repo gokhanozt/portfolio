@@ -4,7 +4,9 @@ import sock from "../../assets/img/sock.png";
 import toy from "../../assets/img/toy.png";
 import candy from "../../assets/img/candy.png";
 import astro from "../../assets/img/astro2.png";
-import developer from "../../assets/img/developer.png";
+import developer from "../../assets/img/developer2.png";
+import code from "../../assets/img/dev-code.png";
+import window from "../../assets/img/dev-window.png";
 import moon from "../../assets/img/moon1.png";
 import spaceship1 from "../../assets/img/spaceship3.png";
 import spaceship2 from "../../assets/img/spaceship2.png";
@@ -58,6 +60,13 @@ const Main = () => {
           src={developer}
           alt=""
         />
+        <div className="code-container code">
+          <img src={code} alt="" />
+        </div>
+
+        <div className="window-container window">
+          <img src={window} alt="" />
+        </div>
         <div className="candy-container candy2">
           <img src={candy} alt="" />
         </div>

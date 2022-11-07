@@ -76,6 +76,9 @@
       }
     }
   }
+  ul.buttons {
+    display: block !important;
+  }
 }
 @media screen and (max-width: 678px) {
   .App {
@@ -140,6 +143,7 @@
         grid-column-end: 1;
         grid-row-start: 5;
         grid-row-end: 5;
+        margin-right: 0;
         input {
           line-height: 30px;
         }
@@ -153,6 +157,17 @@
     h3 {
       font-size: 28px !important;
     }
+  }
+  .App {
+    .projects {
+      grid-template-columns: repeat(2, 48%);
+      grid-template-rows: repeat(2, auto);
+      .project-card {
+      }
+    }
+  }
+  .timeline-mobile {
+    display: block !important;
   }
 }
 
@@ -191,6 +206,10 @@
           font-size: 14px;
         }
       }
+    }
+    .projects {
+      grid-template-columns: repeat(1, 100%);
+      grid-template-rows: repeat(1, auto);
     }
   }
 }

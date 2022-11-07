@@ -21,8 +21,8 @@ const Header = () => {
       link: "#",
     },
     {
-      name: "Blog",
-      link: "#",
+      name: "Projects",
+      link: "#projects",
     },
     {
       name: "Magic World",

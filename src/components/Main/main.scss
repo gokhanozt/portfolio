@@ -395,7 +395,22 @@
     filter: drop-shadow(8px 5px 6px #222);
   }
 }
-
+.code-container {
+  position: absolute;
+  top: 5%;
+  right: 25%;
+  z-index: 0;
+  animation: move2-element 14s infinite linear both alternate;
+  visibility: var(--light-mode-visible);
+  display: var(--light-mode-display);
+  img {
+    display: block;
+    width: 80px;
+    height: auto;
+    animation: rotate-element 15s infinite linear both alternate;
+    filter: drop-shadow(8px 5px 6px #222);
+  }
+}
 .toy-container {
   position: absolute;
   top: 40%;
@@ -500,6 +515,23 @@
       animation: rotate-element 40s infinite linear both alternate;
       filter: drop-shadow(8px 5px 6px #222);
     }
+  }
+}
+
+.window-container {
+  position: absolute;
+  top: 90%;
+  right: 12%;
+  z-index: 0;
+  animation: move-element 12s infinite linear both alternate;
+  visibility: var(--light-mode-visible);
+  display: var(--light-mode-display);
+  img {
+    display: block;
+    width: 85px;
+    height: auto;
+    animation: rotate-element 40s infinite linear both alternate;
+    filter: drop-shadow(8px 5px 6px #222);
   }
 }
 

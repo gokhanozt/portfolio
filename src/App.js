@@ -6,6 +6,7 @@ import Main from "./components/Main/Main";
 import Projects from "./components/Projects/Projects";
 import MusicBox from "./components/MusicBox/MusicBox";
 import Contact from "./components/Contact/Contact";
+import Experience from "./components/Experience/Experience";
 function App() {
   return (
     <div className="App">
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <Main />
       <Projects />
+      <Experience />
       <Contact />
       <MusicBox />
     </div>

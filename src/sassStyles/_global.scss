@@ -63,6 +63,8 @@ body {
   --font-family-1: "Germania One", cursive;
   --font-family-2: "Mountains of Christmas", cursive;
   --right-side-width: 45%;
+  --text-color-comb-1: #333;
+  --text-color-comb-2: #980f0f;
 
   &.dark-theme {
     --c-text-primary: #eee;
@@ -92,6 +94,8 @@ body {
     --font-family-1: "Orbitron", sans-serif;
     --font-family-2: "Orbitron", sans-serif;
     --right-side-width: 90%;
+    --text-color-comb-1: rgb(230, 230, 230);
+    --text-color-comb-2: #980f0f;
   }
   &.light-theme {
     --c-text-primary: #191919;
@@ -122,6 +126,8 @@ body {
     --font-family-1: "Open Sans", sans-serif;
     --font-family-2: "Ubuntu Mono", monospace;
     --right-side-width: 90%;
+    --text-color-comb-1: #333;
+    --text-color-comb-2: #980f0f;
   }
 
   &.christmas-theme {
@@ -148,5 +154,7 @@ body {
     --font-family-1: "Germania One", cursive;
     --font-family-2: "Mountains of Christmas", cursive;
     --right-side-width: 45%;
+    --text-color-comb-1: #333;
+    --text-color-comb-2: #980f0f;
   }
 }
